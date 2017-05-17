@@ -1,0 +1,128 @@
+body,
+h2 {
+    font-family: arial;
+    color: #333333;
+    background-color: #f9fafa
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+div#app {
+    border: 1px solid #ccc;
+}
+#container {
+    background-color: #ffffff;
+    width: 800px;
+}
+.logo {
+    background-position: -257px -58px;
+    background-image: url('../images/global-sprite.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 59px;
+    height: 50px;
+    margin: 1.5rem 3rem 1.2rem 2rem;
+    overflow: hidden;
+    text-indent: -90rem;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    float:left;
+}
+.col-12{
+    width:100%;
+}
+.header{
+        box-shadow: 1px 1px 1px hsla(0,0%,9%,.3);
+    background: #263973;
+    color: #fff;
+    width: 100%;
+    z-index: 100;
+}
+.header-text {
+    padding: 39px;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.sub-menu {
+    box-shadow: 1px 1px 1px hsla(0,0%,9%,.3);
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.sub-menu>ul {
+    overflow-x: auto;
+    padding: 0 .7rem;
+    white-space: nowrap;
+}
+.wrapper {
+    width: 100%;
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+.sub-menu>ul li {
+    vertical-align: middle;
+}
+.inline-list li {
+    display: inline-block;
+}
+.sub-menu>ul li a {
+    display: block;
+    font-size: 15px;
+    max-width: 16rem;
+    padding: 1rem 2rem;
+    white-space: normal;
+    color: #333;
+    font-weight: bold;
+}
+.sub-menu>ul li{
+    border-bottom:3px solid transparent;
+}
+.sub-menu>ul li:hover {
+    border-bottom: 3px solid #263973;
+}
+.table {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #262525;
+    margin: 2rem 0 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table tr:nth-child(odd) {
+    background-color: #fff;
+}
+.table tr {
+    border-bottom: .05rem solid #f7f7f9;
+}
+.standings-table th {
+    font-weight: 400;
+    color: #a4a9bd;
+}
+.table th {
+    font-size: 14px;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+    color: #254061;
+}
+.standings-table th {
+    font-weight: 400;
+    color: #a4a9bd;
+}
+li.active a {
+    border-bottom: 3px solid #263973;
+    /* border-width: 1px; */
+    /* border-style: double; */
+}
