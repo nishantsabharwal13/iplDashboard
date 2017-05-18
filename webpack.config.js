@@ -33,7 +33,7 @@ module : {
     maximumFileSizeToCacheInBytes: 4194304,
     runtimeCaching: [{
       handler: 'cacheFirst',
-      urlPattern: /^https:\/\/github\.com\/.*/,
+      urlPattern: /^https:\/\/nishantsabharwal13\.github\.io\/.*/,
     }],
     navigateFallback: '/app-shell',
     staticFileGlobs:  [

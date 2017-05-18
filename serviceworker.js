@@ -285,7 +285,7 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/^https:\/\/github\.com\/.*/, toolbox.cacheFirst, {});
+toolbox.router.get(/^https:\/\/nishantsabharwal13\.github\.io\/.*/, toolbox.cacheFirst, {});
 
 
 
