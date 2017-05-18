@@ -87,11 +87,15 @@
 
 	(0, _reactDom.render)(router, document.getElementById('app'));
 
-	(function () {
-	  if ('serviceWorker' in navigator) {
-	    navigator.serviceWorker.register('/my-service-worker.js');
-	  }
-	})();
+	if ('serviceWorker' in navigator) {
+	  navigator.serviceWorker.register('serviceworker.js').then(function (registration) {
+	    // Registration was successful
+	    console.log('ServiceWorker registration successful');
+	  }).catch(function (err) {
+	    // registration failed :(
+	    console.log('ServiceWorker registration failed: ', err);
+	  });
+	}
 
 /***/ }),
 /* 1 */
@@ -29555,17 +29559,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var values = {
-		2008: [],
-		2009: [],
-		2010: [],
-		2011: [],
-		2012: [],
-		2013: [],
-		2014: [],
-		2015: [],
-		2016: []
-	};
+	var values = { 2008: [], 2009: [], 2010: [], 2011: [], 2012: [], 2013: [], 2014: [], 2015: [], 2016: [] };
 	var arr = [];
 	for (var i = 0; i < _matches2.default.length; i++) {
 		var key = _matches2.default[i].season;

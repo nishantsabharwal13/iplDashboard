@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["bundle.js","493c168ecbbde60b667353b230ba8129"]];
+var precacheConfig = [["app/css/style.css","9386ee25d95303bb6bdabce741633acd"],["app/images/favicon.ico","3874b2a698730ec94cd1135a4fa9da61"],["app/images/global-sprite.png","8d873c84ad3376a3139d0d0bd67c3644"],["build/bundle.js","3742b9487cc7e08fc1120807d1b5a25f"],["index.html","36b58f8e873becd0b36cb6d1cf5b36bb"]];
 var cacheName = 'sw-precache-v3-iplDashboard-' + (self.registration ? self.registration.scope : '');
 
 
@@ -285,7 +285,7 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/^https:\/\/dev.kraftly\.com\/.*/, toolbox.cacheFirst, {});
+toolbox.router.get(/^https:\/\/github\.com\/.*/, toolbox.cacheFirst, {});
 
 
 

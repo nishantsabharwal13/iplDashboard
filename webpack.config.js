@@ -29,17 +29,20 @@ module : {
   {
     cacheId: 'iplDashboard',
     filename: 'serviceworker.js',
-    filepath: 'app/serviceworker.js',
+    filepath: 'serviceworker.js',
     maximumFileSizeToCacheInBytes: 4194304,
     runtimeCaching: [{
       handler: 'cacheFirst',
-      urlPattern: /^https:\/\/dev.kraftly\.com\/.*/,
+      urlPattern: /^https:\/\/github\.com\/.*/,
     }],
     navigateFallback: '/app-shell',
     staticFileGlobs:  [
-    'build/bundle.js'
+    'build/bundle.js',
+    'app/css/style.css',
+    'app/images/favicon.ico',
+    'app/images/global-sprite.png',
+    'index.html'
         ],
-    stripPrefix:'build/'
   }
   ),
   ],

@@ -20,8 +20,12 @@ const router = (
 
 render(router, document.getElementById('app'));
 
-(function() {
-  if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/my-service-worker.js');
-  }
-})();
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+    // Registration was successful
+    console.log('ServiceWorker registration successful');
+  }).catch(function(err) {
+    // registration failed :(
+    console.log('ServiceWorker registration failed: ', err);
+  });
+}

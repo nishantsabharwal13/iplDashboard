@@ -4,17 +4,7 @@ import { browserHistory } from 'react-router';
 import rootReducer from './reducers/index.js';
 import data from './data/matches.csv';
 
-var values = {
-	2008:[],
-	2009:[],
-	2010:[],
-	2011:[],
-	2012:[],
-	2013:[],
-	2014:[],
-	2015:[],
-	2016:[]
-};
+var values = {2008:[],2009:[],2010:[],2011:[],2012:[],2013:[],2014:[],2015:[],2016:[]};
 var arr =[];
 for (var i = 0; i < data.length; i++)
 {

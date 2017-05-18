@@ -23,7 +23,6 @@ const Table = React.createClass({
 	render(){
 		return(
 			<div className="Table">
-
 			<div>
 			<table className="standings-table table table--scroll-on-phablet ">
 			<tbody>
