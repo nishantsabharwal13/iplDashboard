@@ -24,6 +24,7 @@
     "react-router": "^2.4.0",
     "react-router-redux": "^4.0.4",
     "redux": "^3.5.2",
+    "sw-precache-webpack-plugin": "^0.11.0",
     "webpack": "^1.15.0"
   },
   "author": "nishant",

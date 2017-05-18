@@ -87,6 +87,12 @@
 
 	(0, _reactDom.render)(router, document.getElementById('app'));
 
+	(function () {
+	  if ('serviceWorker' in navigator) {
+	    navigator.serviceWorker.register('/my-service-worker.js');
+	  }
+	})();
+
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {

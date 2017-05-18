@@ -2,6 +2,8 @@ var webpack = require('webpack');
 var path = require('path');
 var BUILD_DIR = path.resolve(__dirname, 'build');
 var APP_DIR = path.resolve(__dirname, 'app');
+var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+
 
 var config = {
   entry: {
@@ -21,7 +23,26 @@ module : {
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
-  },
+  },  
+  plugins: [
+  new SWPrecacheWebpackPlugin(
+  {
+    cacheId: 'iplDashboard',
+    filename: 'serviceworker.js',
+    filepath: 'app/serviceworker.js',
+    maximumFileSizeToCacheInBytes: 4194304,
+    runtimeCaching: [{
+      handler: 'cacheFirst',
+      urlPattern: /^https:\/\/dev.kraftly\.com\/.*/,
+    }],
+    navigateFallback: '/app-shell',
+    staticFileGlobs:  [
+    'build/bundle.js'
+        ],
+    stripPrefix:'build/'
+  }
+  ),
+  ],
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
