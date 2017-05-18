@@ -23852,7 +23852,7 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'header-text', onClick: this.calender },
-							'IPL Match Statistics'
+							'IPLT20 Match Statistics'
 						)
 					)
 				),

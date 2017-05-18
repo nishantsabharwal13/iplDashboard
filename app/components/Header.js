@@ -18,7 +18,7 @@ const Header = React.createClass({
 			<div className="header col-12">
 			<Link to="/">
 			<div className="logo"/>
-			<div className="header-text" onClick={this.calender}>IPL Match Statistics</div>
+			<div className="header-text" onClick={this.calender}>IPLT20 Match Statistics</div>
 			</Link>
 			</div>
 			<div className="sub-menu">
