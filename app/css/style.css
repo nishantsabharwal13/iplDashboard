@@ -82,7 +82,7 @@ div#app {
     font-weight: bold;
 }
 td.date {
-font-size: 0.7rem;
+font-size: 1rem;
 color:grey;
 }
 
@@ -96,7 +96,7 @@ color:grey;
     font-size: 1.2rem;
     line-height: 1.2;
     color: #262525;
-    margin: 2rem 0 4rem;
+    margin: 2rem 0 2rem;
     text-align: center;
     width: 100%;
 }
@@ -127,15 +127,21 @@ table {
     font-weight: 400;
     color: #a4a9bd;
 }
+tr.standings-table__header {
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+}
 td.standings-table {
     font-size: 1rem;
     text-align: left;
     padding: 1rem;
+    padding-right:0;
 }
 td.keys {
     color: #6cbb6c;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 li.active a {
     border-bottom: 3px solid #263973;
@@ -143,4 +149,8 @@ li.active a {
 
 .sub-menu>ul li.active-class{
     border-bottom: 3px solid #263973;
+}
+.winner{
+       color: #6cbb6c;
+    font-weight: bold; 
 }

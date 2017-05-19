@@ -23911,7 +23911,8 @@
 				_react2.default.createElement(
 					"td",
 					{ className: "keys" },
-					key + 1
+					key + 1,
+					":"
 				),
 				_react2.default.createElement(
 					"td",
@@ -23920,7 +23921,7 @@
 				),
 				_react2.default.createElement(
 					"td",
-					{ className: "standings-table" },
+					{ className: "standings-table city" },
 					value.city
 				),
 				_react2.default.createElement(
@@ -23940,7 +23941,7 @@
 				),
 				_react2.default.createElement(
 					"td",
-					{ className: "standings-table" },
+					{ className: "standings-table winner" },
 					value.winner
 				)
 			);

@@ -6,13 +6,13 @@ const Table = React.createClass({
 		return(
 
 			<tr key={key}>
-			<td className="keys">{key+1}</td>
+			<td className="keys">{key+1}:</td>
 			<td className="date">{value.date}</td>
-			<td className="standings-table">{value.city}</td>
+			<td className="standings-table city">{value.city}</td>
 			<td className="standings-table">{value.team1}</td>
 			<td className="standings-table">{value.team2}</td>
 			<td className="standings-table">{value.venue}</td>
-			<td className="standings-table">{value.winner}</td>
+			<td className="standings-table winner">{value.winner}</td>
 			</tr>
 
 			)
