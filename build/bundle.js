@@ -70,6 +70,14 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	if ('serviceWorker' in navigator) {
+	  navigator.serviceWorker.register('serviceworker.js').then(function (registration) {
+	    console.log('ServiceWorker registration successful');
+	  }).catch(function (err) {
+	    console.log('ServiceWorker registration failed: ', err);
+	  });
+	}
+
 	var router = _react2.default.createElement(
 	  _reactRedux.Provider,
 	  { store: _store2.default },
@@ -86,16 +94,6 @@
 	);
 
 	(0, _reactDom.render)(router, document.getElementById('app'));
-
-	if ('serviceWorker' in navigator) {
-	  navigator.serviceWorker.register('serviceworker.js').then(function (registration) {
-	    // Registration was successful
-	    console.log('ServiceWorker registration successful');
-	  }).catch(function (err) {
-	    // registration failed :(
-	    console.log('ServiceWorker registration failed: ', err);
-	  });
-	}
 
 /***/ }),
 /* 1 */

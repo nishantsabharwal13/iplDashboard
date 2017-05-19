@@ -7,6 +7,14 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import store, { history } from './store';
 
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+    console.log('ServiceWorker registration successful');
+  }).catch(function(err) {
+    console.log('ServiceWorker registration failed: ', err);
+  });
+}
+
 const router = (
   <Provider store={store}>
     <Router history={history}>
@@ -19,13 +27,3 @@ const router = (
 )
 
 render(router, document.getElementById('app'));
-
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-    // Registration was successful
-    console.log('ServiceWorker registration successful');
-  }).catch(function(err) {
-    // registration failed :(
-    console.log('ServiceWorker registration failed: ', err);
-  });
-}

@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["app/css/style.css","9386ee25d95303bb6bdabce741633acd"],["app/images/favicon.ico","3874b2a698730ec94cd1135a4fa9da61"],["app/images/global-sprite.png","8d873c84ad3376a3139d0d0bd67c3644"],["build/bundle.js","340e1ce21375c985534dfc8ce12aaa42"],["index.html","36b58f8e873becd0b36cb6d1cf5b36bb"]];
+var precacheConfig = [["app/css/style.css","9386ee25d95303bb6bdabce741633acd"],["app/images/favicon.ico","3874b2a698730ec94cd1135a4fa9da61"],["app/images/global-sprite.png","8d873c84ad3376a3139d0d0bd67c3644"],["build/bundle.js","93f72aba1bd9bc3b4b96cbbb06df27ac"],["index.html","36b58f8e873becd0b36cb6d1cf5b36bb"]];
 var cacheName = 'sw-precache-v3-iplDashboard-' + (self.registration ? self.registration.scope : '');
 
 

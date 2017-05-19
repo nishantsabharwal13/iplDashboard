@@ -30,18 +30,17 @@ module : {
     cacheId: 'iplDashboard',
     filename: 'serviceworker.js',
     filepath: 'serviceworker.js',
-    maximumFileSizeToCacheInBytes: 4194304,
     runtimeCaching: [{
       handler: 'cacheFirst',
       urlPattern: /^https:\/\/nishantsabharwal13\.github\.io\/.*/,
     }],
     navigateFallback: '/app-shell',
     staticFileGlobs:  [
+    'index.html',
     'build/bundle.js',
     'app/css/style.css',
     'app/images/favicon.ico',
-    'app/images/global-sprite.png',
-    'index.html'
+    'app/images/global-sprite.png'
         ],
   }
   ),
