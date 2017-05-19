@@ -79,7 +79,6 @@ div#app {
     padding: 1rem 2rem;
     white-space: normal;
     color: #333;
-    font-weight: bold;
 }
 td.date {
 font-size: 1rem;
@@ -126,6 +125,9 @@ table {
 .standings-table th {
     font-weight: 400;
     color: #a4a9bd;
+}
+li.active-class a {
+    font-weight: bold;
 }
 tr.standings-table__header {
     border: 1px solid #ccc;
