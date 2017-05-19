@@ -81,6 +81,11 @@ div#app {
     color: #333;
     font-weight: bold;
 }
+td.date {
+font-size: 0.7rem;
+color:grey;
+}
+
 .sub-menu>ul li{
     border-bottom:3px solid transparent;
 }
@@ -107,8 +112,9 @@ table {
     border-bottom: .05rem solid #f7f7f9;
 }
 .standings-table th {
-    font-weight: 400;
     color: #a4a9bd;
+    text-align: left;
+    letter-spacing: 2px;
 }
 .table th {
     font-size: 14px;
@@ -121,8 +127,20 @@ table {
     font-weight: 400;
     color: #a4a9bd;
 }
+td.standings-table {
+    font-size: 1rem;
+    text-align: left;
+    padding: 1rem;
+}
+td.keys {
+    color: #6cbb6c;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
 li.active a {
     border-bottom: 3px solid #263973;
-    /* border-width: 1px; */
-    /* border-style: double; */
+}
+
+.sub-menu>ul li.active-class{
+    border-bottom: 3px solid #263973;
 }

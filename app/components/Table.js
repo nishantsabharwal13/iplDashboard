@@ -6,16 +6,13 @@ const Table = React.createClass({
 		return(
 
 			<tr key={key}>
-			<td>{key+1}</td>
-			<td className="standings-table__team">
-			<span className="table__logo tLogo16x30 RCB"></span>
-			<span className="standings-table__team-name js-team">{value.city}</span>
-			</td>
-			<td>{value.date}</td>
-			<td className="standings-table__optional">{value.team1}</td>
-			<td className="standings-table__optional">{value.team2}</td>
-			<td className="standings-table__optional">{value.venue}</td>
-			<td className="standings-table__optional">{value.winner}</td>
+			<td className="keys">{key+1}</td>
+			<td className="date">{value.date}</td>
+			<td className="standings-table">{value.city}</td>
+			<td className="standings-table">{value.team1}</td>
+			<td className="standings-table">{value.team2}</td>
+			<td className="standings-table">{value.venue}</td>
+			<td className="standings-table">{value.winner}</td>
 			</tr>
 
 			)
@@ -28,8 +25,8 @@ const Table = React.createClass({
 			<tbody>
 			<tr className="standings-table__header">
 			<th></th>
-			<th className="u-left-text">City</th>
 			<th>Date</th>
+			<th className="u-left-text">City</th>
 			<th className="standings-table__optional">Team 1</th>
 			<th className="standings-table__optional">Team 2</th>
 			<th className="standings-table__optional">Venue</th>

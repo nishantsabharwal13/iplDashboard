@@ -3,14 +3,24 @@ import { Link } from 'react-router';
 
 const Header = React.createClass({
 
+	cssBorder(key){
+		var list =document.getElementsByTagName('li');
+		for (var i=0; i <list.length; i++){
+			document.getElementsByTagName('li')[i].classList.remove("active-class");
+		}
+		list[key].className += ' active-class'; 
+	},
 	renderCalender(value,key){
 	return(
-			<li key={key}>
-			<Link to={`/calender/${value[0]}`}>
+			<li key={key} >
+			<Link to={`/calender/${value[0]}`} onClick={this.cssBorder.bind(this,key)} className={key}>
 			{value[0]}
 			</Link>
 			</li>
 		)
+	},
+	componentDidMount(){
+		document.getElementsByTagName('li')[0].className += ' active-class'; 
 	},
 	render(){
 		return(
